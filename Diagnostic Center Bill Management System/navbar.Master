@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="navbar.master.cs" Inherits="Diagnostic_Center_Bill_Management_System.navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>Diagnostic Center</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <h1>Diagonistic Center Bill Management System</h1>
+    <h3></h3>
+    <form id="form1" runat="server">
+         <div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">Setup</button>
+        <div class="dropdown-content">
+            <a href="TestType.aspx">Test Type</a>
+            <a href="TestSetup.aspx">Test</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Test Request</button>
+        <div class="dropdown-content">
+            <a href="Entry.aspx">Entry</a>
+            <a href="Payment.aspx">Payment</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Report</button>
+        <div class="dropdown-content">
+            <a href="TestwiseReport.aspx">Test Wise</a>
+            <a href="TypewiseReport.aspx">Type Wise</a>
+            <a href="UnpaidBill.aspx">Unpaid Bill</a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
