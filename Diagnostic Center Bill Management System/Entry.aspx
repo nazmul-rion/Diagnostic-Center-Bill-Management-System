@@ -24,6 +24,7 @@
                 </asp:DropDownList>
                 <br>
                 <label for="fee">Fee:</label>
+
                 <br>
                 <input type="text" id="fee" name="fee">
                 <br>
