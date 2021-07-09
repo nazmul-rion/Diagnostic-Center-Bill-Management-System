@@ -14,8 +14,12 @@
                 <label for="tdate">To Date:</label>
                 <br>
                 <input type="date" id="tdate" name="tdate">
-                <input class="btn" type="submit" value="Show" name="showbtn">
-                <br><br>
+                <asp:Button ID="Button1" runat="server" Text="Show" OnClick="Button1_Click" />
+                <br />
+                <br>
+                <asp:GridView ID="GridView1" runat="server">
+                </asp:GridView>
+                <br>
             </fieldset>
         </form>
         <br><br>

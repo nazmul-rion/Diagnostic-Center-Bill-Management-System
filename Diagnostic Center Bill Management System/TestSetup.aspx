@@ -18,11 +18,11 @@
                 <label for="testtype">Test Type:</label>
                 <br>
                 
-                <asp:DropDownList ID="DropDownList1" name="typeid" runat="server">
+                <asp:DropDownList ID="DropDownList1" name="typeid"  runat="server">
                 </asp:DropDownList>
                 
                 <br>
-         <asp:Button Text="Save" runat="server" OnClick="savebtn" style="width: 42px" />
+         <asp:Button Text="Save" runat="server" OnClick="savebtn" style="width: 42px; " />
                 <br />
                 <br>
                 <asp:GridView ID="GridView1" runat="server">

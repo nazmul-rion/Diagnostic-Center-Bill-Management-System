@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <fieldset class="pages" id="Payment">
-        <form action="#">
+        <form >
             <fieldset>
                 <legend>Payment</legend>
                 <label for="billno">Bill No :</label>
@@ -15,22 +15,24 @@
                 <label for="mobile">Mobile No:</label>
                 <br>
                 <input type="text" id="mobile" name="mobile">
-                <input class="btn" type="submit" value="Search" name="searchbtn">
+                <asp:Button ID="Button1" runat="server" Text="Search" OnClick="Button1_Click" />
                 <br><br>
             </fieldset>
         </form>
-        <br><br>
+        <br>
+        
+        <br>
         <fieldset>
-            <form action="#">
+            <form >
                 <label for="ammount">Ammount :</label>
                 <br>
-                <input type="text" id="ammount" name="ammount">
+                <input type="text" id="ammount" name="ammount" runat="server">
                 <br>
                 <label for="duedate">Due Date:</label>
                 <br>
-                <input type="date" id="duedate" name="duedate">
-                <input class="btn" type="submit" value="Pay" name="paybtn">
-            </form>
+                <input type="date" id="duedate" name="duedate" runat="server">
+                </form>
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Pay" />
         </fieldset>
 
     </fieldset>

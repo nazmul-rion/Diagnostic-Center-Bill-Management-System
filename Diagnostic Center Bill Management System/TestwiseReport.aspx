@@ -13,27 +13,17 @@
                 <br>
                 <label for="tdate">To Date:</label>
                 <br>
-                <input type="date" id="tdate" name="tdate">
-                <input class="btn" type="submit" value="Show" name="showbtn">
+                <input type="date" id="tdate" name="tdate">&nbsp;
+                <asp:Button ID="Button1" runat="server" Text="Show" OnClick="Button1_Click" />
                 <br><br>
             </fieldset>
         </form>
         <br><br>
-        <table>
-            <tr>
-                <th>SL</th>
-                <th>Test Name</th>
-                <th>Total Test</th>
-                <th>Total Ammount</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <br><br>
+        
+        <br>
+         <asp:GridView ID="GridView1" runat="server">
+         </asp:GridView>
+         <br>
         <button class="pbfbtn">PDF</button>
         <div class="totalshw" style="text-align: right;">
             <label for=" total">Total:</label>

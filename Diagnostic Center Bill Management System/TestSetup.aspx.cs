@@ -16,16 +16,17 @@ namespace Diagnostic_Center_Bill_Management_System
 
         MySqlConnection con = new MySqlConnection("server =localhost; Uid=root; password = ; persistsecurityinfo = True; database =web_assignment; SslMode = none");
         MySqlCommand cmd;
-
+        DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
             filldropdown();
             showtable();
+            
         }
 
         private void showtable()
         {
-            using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM test"))
+            using (MySqlCommand cmd = new MySqlCommand("SELECT  t.Name, t.Fee  FROM test t"))
             {
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = con;
@@ -57,7 +58,7 @@ namespace Diagnostic_Center_Bill_Management_System
 
             string testname = Request.Form.Get("testname");
             string fee = Request.Form.Get("fee");
-            string tid = DropDownList1.SelectedValue;
+            string tid =DropDownList1.SelectedValue;
           
             try
             {
@@ -78,5 +79,7 @@ namespace Diagnostic_Center_Bill_Management_System
             }
 
         }
+
+       
     }
 }
