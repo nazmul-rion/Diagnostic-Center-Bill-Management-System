@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <h1>Diagonistic Center Bill Management System</h1>
-    <h3></h3>
+    
     <form id="form1" runat="server">
+         <h1>Diagonistic Center Bill Management System</h1>
          <div class="navbar">
+            <div class="dropdown"> 
+             <button class="dropbtn"><a href="Home.aspx">Home</a></button>
+                </div>
     <div class="dropdown">
         <button class="dropbtn">Setup</button>
         <div class="dropdown-content">
@@ -39,6 +42,7 @@
         </div>
     </div>
 </div>
+       
 <br>
 <br>
         <div>

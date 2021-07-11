@@ -22,7 +22,7 @@
                 </asp:DropDownList>
                 
                 <br>
-         <asp:Button Text="Save" runat="server" OnClick="savebtn" style="width: 42px; " />
+         <asp:Button Text="Save" runat="server" OnClick="savebtn"  />
                 <br />
                 <br>
                 <asp:GridView ID="GridView1" runat="server">

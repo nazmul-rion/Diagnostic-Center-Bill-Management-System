@@ -44,7 +44,7 @@ namespace Diagnostic_Center_Bill_Management_System
             string billno = Request.Form.Get("billno");
             string mob = Request.Form.Get("mobile");
 
-            cmd = new MySqlCommand("DELETE FROM payment WHERE BillNo = @bno OR Mobile = @mob ", con);
+            cmd = new MySqlCommand("delete from payment where BillNo =@bno OR Mobile = @mob ", con);
             cmd.Parameters.AddWithValue("@bno", billno);
             cmd.Parameters.AddWithValue("@mob", mob);
             con.Open();

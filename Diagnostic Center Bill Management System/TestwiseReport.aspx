@@ -24,7 +24,6 @@
          <asp:GridView ID="GridView1" runat="server">
          </asp:GridView>
          <br>
-        <button class="pbfbtn">PDF</button>
         <div class="totalshw" style="text-align: right;">
             <label for=" total">Total:</label>
             <input type="text" id="total" name="total">
